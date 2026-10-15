@@ -1,0 +1,141 @@
+{
+  "info": {
+    "_postman_id": "a814f9cc-ef7e-4f72-99a3-d7efe0355e1f",
+    "name": "Manajemen-Data-Voucher-Diskon",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58519501",
+    "_collection_link": "https://go.postman.co/collection/58519501-a814f9cc-ef7e-4f72-99a3-d7efe0355e1f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Tambah voucher",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"kode_voucher\": \"PROMO20\",\r\n  \"persentase_diskon\": 20,\r\n  \"masih_aktif\": true\r\n}\r\n      ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/vouchers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "vouchers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ambil semua voucher",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/vouchers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "vouchers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ambil detail voucher",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/vouchers/6ad05e3c1d5cf64783389bc4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "vouchers",
+            "6ad05e3c1d5cf64783389bc4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Perbarui voucher",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"kode_voucher\": \"PROMO20\",\r\n  \"persentase_diskon\": 25,\r\n  \"masih_aktif\": true\r\n}\r\n      ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/vouchers/6ad05e3c1d5cf64783389bc4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "vouchers",
+            "6ad05e3c1d5cf64783389bc4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Hapus Voucher",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/vouchers/6ad05e3c1d5cf64783389bc4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "vouchers",
+            "6ad05e3c1d5cf64783389bc4"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
